@@ -151,11 +151,11 @@ reliability-lifetime-prediction/
     ├── data_generator.py
     ├── lifetime_model.py
     ├── analysis.py
-    └── visualization.py '''
-
-
+    └── visualization.py
+```
 
 ## Tech Stack
+
 - Python
 - pandas
 - NumPy
@@ -164,7 +164,9 @@ reliability-lifetime-prediction/
 - Matplotlib
 
 ## Key Takeaways
+
 This project demonstrates an end-to-end reliability modeling workflow that combines:
+
 - Synthetic data generation
 - Nonlinear model fitting
 - Lifetime extrapolation
@@ -172,10 +174,13 @@ This project demonstrates an end-to-end reliability modeling workflow that combi
 - Variability analysis
 - Outlier screening
 - Automated visualization
+
 Rather than reporting only a single prediction, the workflow evaluates both model fit and variability across individual samples.
 
 ## Future Improvements
+
 Potential extensions include:
+
 - Bootstrap confidence intervals for lifetime estimates
 - Residual-based model diagnostics
 - Comparison with alternative degradation models
@@ -185,5 +190,7 @@ Potential extensions include:
 - Interactive analysis using Streamlit
 
 ## Disclaimer
+
 This project was independently developed for educational and portfolio purposes using fully synthetic data.
+
 It demonstrates general statistical modeling concepts for degradation and reliability analysis and does not contain or reproduce any proprietary data, source code, product specifications, test conditions, internal methodologies, or confidential information from any current or former employer.
