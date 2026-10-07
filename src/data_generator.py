@@ -27,8 +27,8 @@ def generate_synthetic_data(
 
     for i in range(1, n_samples + 1):
         # Synthetic sample-to-sample variation
-        a = rng.normal(loc=0.00025, scale=0.000025)
-        b = rng.normal(loc=0.65, scale=0.04)
+        a = rng.normal(loc=0.00025, scale=0.000015)
+        b = rng.normal(loc=0.65, scale=0.02)
 
         # Keep parameters physically reasonable
         a = max(a, 0.00005)
@@ -37,7 +37,7 @@ def generate_synthetic_data(
         true_curve = stretched_exponential(time, a, b)
 
         # Add small synthetic measurement noise
-        noise = rng.normal(loc=0.0, scale=0.0015, size=len(time))
+        noise = rng.normal(loc=0.0, scale=0.0008, size=len(time))
         observed_curve = true_curve + noise
 
         # Force initial point to exactly 1.0
