@@ -50,7 +50,7 @@ def generate_synthetic_data(
 
 if __name__ == "__main__":
     df = generate_synthetic_data()
-    df.to_csv("synthetic_degradation.csv", index=False)
+    df.to_csv("data/synthetic_degradation.csv", index=False)
 
     print(df.head())
     print(f"\nGenerated dataset shape: {df.shape}")
